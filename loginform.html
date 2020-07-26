@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<style>
+			body 
+			{
+   				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			}
+			form	
+			{
+   				margin: auto;
+  				width: 25%;
+  				border: 3px solid black;
+  				padding: 20px;
+			}
+			.inputContainer 
+			{
+   				width: 95%;
+   				margin-bottom: 10px;
+			}
+			.Field 
+			{
+   				width: 100%;
+   				padding: 6px;
+   				text-align: left;
+   				font-size: 15px;
+   				font-weight: 500;
+			}
+			.errspan 
+			{
+       				float: right;
+        			position: relative;
+				margin-right: 7px;
+        			margin-top: -20px;
+        			z-index: 2;
+        			color: gray;
+    			}
+			.signinbox
+			{
+				background-color: #3EA99F;
+				text-align: center;
+				width: 105%;
+				padding: 10px;
+			}
+		</style>
+
+	</head>
+	<body link="black">						
+		<form>
+			<h1 style="text-align: center; background-color: #3EA99F;">Sign in</h1>
+			<div class="inputContainer">
+				<input class="Field" type="text" placeholder="mail@example.com" id="ename"/>
+				<span class="fa fa-envelope-o errspan"></span>
+			</div>
+			<div class="inputContainer">
+				<input class="Field" type="password" placeholder="password" id="pname"pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 characters" required/>
+				<span class="fa fa-unlock-alt errspan"></span>
+			</div>
+			<div class="inputContainer">
+				<input type="submit" class="signinbox">
+			</div>
+			<div class="inputContainer">
+    				<pre><span class="psw"><a href="#">Forgot password?</a>        <a href="#">Register?</a></span></pre>
+  			</div>
+		</form>
+	</body>
+</html>
